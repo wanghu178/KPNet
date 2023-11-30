@@ -1,0 +1,28 @@
+name: KPNet_32
+model: base
+distortion: sr
+scale: 1
+gpu_ids: [0]
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: 000_Valid_SingleFrame_FirstStage
+    mode: LQGT_base
+    dataroot_LQ: D:\dataset\compress\qp32\test_sdr_32_png
+    dataroot_GT: E:\hdrtv\test_set\test_hdr
+    condition: image
+    n_workers: 1
+    
+#### network structures
+network_G:
+  which_model_G: scale_3_brain_new1
+  in_nc: 3
+  out_nc: 3
+  nf: 64 
+  act_type: relu 
+  
+#### path
+path:
+  root: D:\experiment\KUNet2
+  # pretrain_model_G: ../experiments/HDRUNet_tanh_l1_bs_16_ps_160/models/latest_G.pth
+  pretrain_model_G: F:\code\open\KPNet\model\32\latest_G.pth
