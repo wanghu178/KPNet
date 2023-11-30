@@ -35,6 +35,7 @@ we conduct experiment on  **HDRTV** [3] and HM16.9. This dataset contains 1235 p
 
 ## <span id="2">Configure
 
+`pip install -r requirements.txt`
 
 ## <span id="3">How to test
 
