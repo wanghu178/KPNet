@@ -9,19 +9,15 @@ Official pytorch implementation of the KPNet
 * [ ] Submit implementation details
 * [ ] Perfect link to the paper
 * [ ] Citation
-
 * [X] 🎉️  Acknowledgment
 * [X] 🎉️ Getting Started
 * [ ] Reference
 
 # Overview
 
-
 # Implementation details
 
-
 # Getting Started
-
 
 1. [Dataset](#1)
 2. [Configure](#2)
